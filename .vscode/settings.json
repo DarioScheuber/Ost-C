@@ -1,0 +1,17 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": true,
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+    "actionButtons": {
+        "defaultColor": "#ff0034",
+        "loadNpmCommands": false,
+        "reloadButton": "♻️",
+        "commands": [
+            {
+                "name": "$(triangle-right) Run",
+                "color": "orange",
+                "command": "& 'C:\\MinGW\\bin\\gcc.exe' '${file}' -o '${fileDirname}\\${fileBasenameNoExtension}.exe'; if ($?) { & '${fileDirname}\\${fileBasenameNoExtension}.exe' }"
+            }
+        ]
+    }
+}

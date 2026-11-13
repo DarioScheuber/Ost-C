@@ -1,0 +1,70 @@
+{
+    "folders": [
+        {
+            "name": ".vscode",
+            "path": ".vscode"
+        },
+        {
+            "name": ".claude",
+            "path": ".claude"
+        },
+        {
+            "name": ".github",
+            "path": ".github"
+        },
+        {
+            "name": "doc",
+            "path": "doc"
+        },
+        {
+            "name": "WorkspaceInfo",
+            "path": "_WorkspaceInfo"
+        },
+        {
+            "name": "00_AVR_Project_Template",
+            "path": "00_AVR_Project_Template"
+        },
+        {
+            "path": "01_AVR_Project_Led"
+        }
+    ],
+    "settings": {
+        "explorer.confirmDragAndDrop": false,
+        "explorer.confirmDelete": true,
+        // Copilot: "../" is resolved from the FIRST folder (doc) -> workspace root C/
+        "chat.useAgentSkills": true,
+        "chat.agentSkillsLocations": {
+            "../.claude/skills": true
+        },
+        "chat.instructionsFilesLocations": {
+            "../.github/instructions": true
+        },
+        "actionButtons": {
+            "defaultColor": "#ff0034",
+            "loadNpmCommands": false,
+            "reloadButton": "♻️",
+            "commands": [
+                {
+                    "name": "$(file-code) Compile ",
+                    "color": "white",
+                    "command": "cd '${fileDirname}\\..';make compile"
+                },
+                {
+                    "name": "$(tools) Build",
+                    "color": "orange",
+                    "command": "cd '${fileDirname}\\..';make build"
+                },
+                {
+                    "name": "$(triangle-right) Flash",
+                    "color": "orange",
+                    "command": "cd '${fileDirname}\\..';make flash"
+                },
+                {
+                    "name": "$(trash) Clean",
+                    "color": "red",
+                    "command": "cd '${fileDirname}\\..';make clean"
+                }
+            ]
+        }
+    }
+}
